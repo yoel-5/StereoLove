@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stereo Love</title>
+  </head>
+  <body>
+    <audio id="audio" src="bgm2.mp3" autoplay></audio>
+    <div id="typed"></div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#typed", {
+        strings: [
+          "^1500When I see you baby",
+          "I just don't wanna let go",
+          "mmmm....^1000",
+          "mmmm....^1000",
+          "When you're gonna stop^50",
+          "breaking my heart....^4500",
+          "I don't wanna be...^400",
+          "another one...^4500",
+          "Paying for the things^400",
+          "I never done...^3500",
+          "Don't let go^500",
+          "Don't let go",
+        ],
+        typeSpeed: 40,
+        backSpeed: 0,
+        smartBackspace: false,
+        loop: false,
+      });
+      window.addEventListener("load", function () {
+        document.querySelector("#audio").play();
+      });
+    </script>
+  </body>
+</html>
